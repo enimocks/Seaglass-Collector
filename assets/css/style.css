@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 20px;
+  /* background-image: url("../images/beach-background.jpg"); */
+}
+
+h1 {
+  font-size: 32px;
+  padding: 20px 0;
+}
+
+h2{
+  font-size: 24px;
+}
+
+div {
+  padding: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  width: 60%;
+  line-height: 1.2;
+}
+
+ul > li {
+  font-size: 16px;
+}
+
+#seaglass > img {
+  width: 150px;
+  margin-right: 10px;
+}

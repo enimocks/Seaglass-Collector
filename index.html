@@ -16,9 +16,16 @@
 
 <body>
   <h1>Seaglass Collector!</h1>
-
+  <br>
   <div id="instructions">
     <!-- Gameplay instructions will go here -->
+    <ul>
+      <li>There are 4 different colors of seaglass below. Each color is worth a random amount of points. The point values of each color seaglass are randomized each round, and are hidden from you until you click on each of them. It is up to you to figure out, and keep track of how many points each piece of seaglass is worth.</li>
+      <br>
+      <li>You are also given a random target number at the beginning of each round. This is the exact number of points you should try to reach in each round.</li>
+      <br>
+      <li>You win the game by getting your Total Score to equal the exact value of the Target Number -- if you exceed the Target Number, you lose!</li>
+    </ul>
   </div>
 
   <div id="target-number">
@@ -29,21 +36,21 @@
   <div id="wins-losses">
     <!-- Wins & Losses will be accounted for here -->
     <h2>Wins: <span id="winsEl"></span></h2>
-    <br>
+  
     <h2>Losses: <span id="lossesEl"></span></h2>
   </div>
 
   <div id="seaglass">
     <!-- The clickable seaglass images will go here -->
     <img src="assets/images/blue.png" alt="Blue Seaglass" id="one">
-    <img src="assets/images/green.png" alt="Green Seaglass" id="two">
     <img src="assets/images/orange.png" alt="Orange Seaglass" id="three">
+    <img src="assets/images/green.png" alt="Green Seaglass" id="two">
     <img src="assets/images/red.png" alt="Red Seaglass" id="four">
   </div>
 
   <div>
     <!-- (Running total) the sum of all clicked seaglass images will go here -->
-    <h2>Your total score is: <span id="current-score"></span></h2>
+    <h2>Your total score is: <span id="scoreEl"></span></h2>
   </div>
 
   <script src="./assets/javascript/game.js"></script>
