@@ -54,6 +54,14 @@ ul > li {
   background-color: #213F57;
   padding: 1rem;
   width: fit-content;
+  margin: 15px 0;
+}
+
+#seaglass {
+  background-color: tan;
+  width: fit-content;
+  padding: 0.5rem;
+  margin: 15px 0;
 }
 
 #seaglass > img {
