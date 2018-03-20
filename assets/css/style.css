@@ -13,15 +13,16 @@ h1 {
   width: fit-content;
   background-color: #131F11;
   margin: 15px 0;
+  border: 1px solid wheat;
 }
 
-h2{
+h2 {
   font-size: 24px;
 }
 
 #instructions {
   background-color: #727578; 
-  width: 60%;
+  width: 70%;
   line-height: 1.2;
   padding: 1rem;
   margin-bottom: 15px;
@@ -41,6 +42,7 @@ ul > li {
   background-color: #789ABE;
   width: fit-content;
   padding: 1rem;
+  border: 1px solid wheat;
 }
 
 #wins-losses {
@@ -48,6 +50,7 @@ ul > li {
   background-color: #E17C50;
   margin-top: 15px;
   padding: 1rem;
+  border: 1px solid wheat;
 }
 
 #total-score {
@@ -55,6 +58,7 @@ ul > li {
   padding: 1rem;
   width: fit-content;
   margin: 15px 0;
+  border: 1px solid wheat;
 }
 
 #seaglass {
