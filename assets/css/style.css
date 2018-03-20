@@ -1,26 +1,35 @@
 body {
   margin-left: 20px;
-  /* background-image: url("../images/beach-background.jpg"); */
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/beach-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 h1 {
   font-size: 32px;
-  padding: 20px 0;
+  padding: 15px;
+  width: fit-content;
+  background-color: #131F11;
+  margin: 15px 0;
 }
 
 h2{
   font-size: 24px;
 }
 
-div {
-  padding: 15px 0;
+#instructions {
+  background-color: #727578; 
+  width: 60%;
+  line-height: 1.2;
+  padding: 1rem;
+  margin-bottom: 15px;
 }
 
 ul {
-  list-style-type: disc;
-  width: 60%;
-  line-height: 1.2;
   padding-left: 15px;
+  list-style-type: disc;
 }
 
 ul > li {
@@ -28,8 +37,27 @@ ul > li {
   padding-bottom: 10px;
 }
 
+#target-number {
+  background-color: #789ABE;
+  width: fit-content;
+  padding: 1rem;
+}
+
+#wins-losses {
+  width: fit-content;
+  background-color: #E17C50;
+  margin-top: 15px;
+  padding: 1rem;
+}
+
+#total-score {
+  background-color: #213F57;
+  padding: 1rem;
+  width: fit-content;
+}
+
 #seaglass > img {
   width: 150px;
-  margin-right: 10px;
+  margin: 10px;
   cursor: pointer;
 }
