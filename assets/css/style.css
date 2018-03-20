@@ -26,6 +26,7 @@ h2 {
   line-height: 1.2;
   padding: 1rem;
   margin-bottom: 15px;
+  border: 1px solid black;
 }
 
 ul {
@@ -72,4 +73,5 @@ ul > li {
   width: 150px;
   margin: 10px;
   cursor: pointer;
+  border: 3px solid rgb(209, 159, 92);
 }
