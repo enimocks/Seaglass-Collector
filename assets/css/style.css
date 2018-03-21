@@ -5,10 +5,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  overflow: hidden;
+
 }
 
-h1 {
-  font-size: 32px;
+#title {
   padding: 15px;
   width: fit-content;
   background-color: #131F11;
@@ -16,17 +17,21 @@ h1 {
   border: 1px solid wheat;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 h2 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 #instructions {
-  background-color: #727578; 
+  background-color: rgba(108, 112, 115, 0.8); 
   width: 70%;
   line-height: 1.2;
   padding: 1rem;
   margin-bottom: 15px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0, 0.5);
 }
 
 ul {
@@ -73,5 +78,12 @@ ul > li {
   width: 150px;
   margin: 10px;
   cursor: pointer;
-  border: 3px solid rgb(168, 134, 90);
+  border: 1px solid rgb(168, 134, 90);
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: 1200px;
+    height: 960px;
+  }
 }
