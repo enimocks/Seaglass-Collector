@@ -22,6 +22,8 @@ $('#scoreEl').text(runningScore);
 
 // Functions defining: a Win, a Loss, a Win Checker, and a Reset function
 // ======================================================================================
+
+// This function resets the game/round by: generating new random #'s for the crystals and target # -- it also writes them to the DOM
 function reset() {
   randomTargetNum = Math.floor(Math.random() * 102 + 19);
   $('#targetEl').text(randomTargetNum);
@@ -33,18 +35,22 @@ function reset() {
   $('#scoreEl').text(runningScore);
 }
 
+// This function increments the win counter, then writes that to the DOM, then calls the reset() function
 function winner() {
   wins++;
   $('#winsEl').text(wins);
   reset();
 }
 
+// This function increments the losses counter, then writes that to the DOM, then calls the reset() function
 function loser() {
   losses++;
   $('#lossesEl').text(losses);
   reset();
 }
 
+// This function checks for a win -- a user-to-target number match
+// If the numbers become equal, trigger winner() function -- else if the user exceeds the target, call loser() function
 function checkWin() {
   if (runningScore === randomTargetNum) {
     winner();
@@ -53,26 +59,27 @@ function checkWin() {
   }
 }
 
-// On click events for the 4 images
-// Blue seaglass(1)
+// jQuery on-click events for the 4 images.
+// Here each of the 4 images is waiting to be clicked (click event) if that happens, we run a function that takes the
+// running score and adds its random value to it, writes that to the DOM, then runs the checkWin() function.
 $('body').on('click', '#one', function() {
   runningScore = runningScore + rand1;
   $('#scoreEl').text(runningScore);
   checkWin();
 });
-// Orange seaglass(2)
+
 $('body').on('click', '#two', function() {
   runningScore = runningScore + rand2;
   $('#scoreEl').text(runningScore);
   checkWin();
 });
-// Green seaglass(3)
+
 $('body').on('click', '#three', function() {
   runningScore = runningScore + rand3;
   $('#scoreEl').text(runningScore);
   checkWin();
 });
-// Red seaglass(4)
+
 $('body').on('click', '#four', function() {
   runningScore = runningScore + rand4;
   $('#scoreEl').text(runningScore);
