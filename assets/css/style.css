@@ -5,8 +5,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  overflow: hidden;
-
 }
 
 #title {
@@ -72,6 +70,7 @@ ul > li {
   width: fit-content;
   padding: 0.5rem;
   margin: 15px 0;
+  max-width: 90%;
 }
 
 #seaglass > img {
@@ -81,9 +80,9 @@ ul > li {
   border: 1px solid rgb(168, 134, 90);
 }
 
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
   body {
     width: 1200px;
     height: 960px;
   }
-}
+} */

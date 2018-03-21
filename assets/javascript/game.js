@@ -20,7 +20,7 @@ $('#winsEl').text(wins);
 $('#lossesEl').text(losses);
 $('#scoreEl').text(runningScore);
 
-// Function to determine: a Win, a Loss, Win Checker and a Reset function
+// Functions defining: a Win, a Loss, a Win Checker, and a Reset function
 // ======================================================================================
 function reset() {
   randomTargetNum = Math.floor(Math.random() * 102 + 19);
@@ -77,4 +77,4 @@ $('body').on('click', '#four', function() {
   runningScore = runningScore + rand4;
   $('#scoreEl').text(runningScore);
   checkWin();
-})
+});
