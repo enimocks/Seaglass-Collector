@@ -14,11 +14,11 @@ var wins = 0;
 var losses = 0;
 var runningScore = 0;
 
-// Write the contents of JS variables to DOM & save assignments as variables
-var updateRand = $('#targetEl').text(randomTargetNum);
-var updateWins = $('#winsEl').text(wins);
-var updateLosses = $('#lossesEl').text(losses);
-var updateScore = $('#scoreEl').text(runningScore);
+// Write the contents of JS variables to DOM
+$('#targetEl').text(randomTargetNum);
+$('#winsEl').text(wins);
+$('#lossesEl').text(losses);
+$('#scoreEl').text(runningScore);
 
 // Function to determine: a Win, a Loss, Win Checker and a Reset function
 // ======================================================================================
@@ -54,27 +54,27 @@ function checkWin() {
 }
 
 // On click events for the 4 images
-// Blue glass(1)
+// Blue seaglass(1)
 $('body').on('click', '#one', function() {
   runningScore = runningScore + rand1;
   $('#scoreEl').text(runningScore);
   checkWin();
 });
-// Orange glass(2)
+// Orange seaglass(2)
 $('body').on('click', '#two', function() {
   runningScore = runningScore + rand2;
   $('#scoreEl').text(runningScore);
   checkWin();
 });
-// Green glass(3)
+// Green seaglass(3)
 $('body').on('click', '#three', function() {
   runningScore = runningScore + rand3;
   $('#scoreEl').text(runningScore);
   checkWin();
 });
-// Red glass(4)
+// Red seaglass(4)
 $('body').on('click', '#four', function() {
   runningScore = runningScore + rand4;
   $('#scoreEl').text(runningScore);
   checkWin();
-});
+})
