@@ -14,16 +14,12 @@ var wins = 0;
 var losses = 0;
 var runningScore = 0;
 
-// Write the contents of JS variables to DOM
-$('#targetEl').text(randomTargetNum);
-$('#winsEl').text(wins);
-$('#lossesEl').text(losses);
-$('#scoreEl').text(runningScore);
-
 // Functions defining: a Win, a Loss, a Win Checker, and a Reset function
 // ======================================================================================
 
 // This function resets the game/round by: generating new random #'s for the crystals and target # -- it also writes them to the DOM
+$(document).ready(function() {
+
 function reset() {
   randomTargetNum = Math.floor(Math.random() * 102 + 19);
   $('#targetEl').text(randomTargetNum);
@@ -84,4 +80,12 @@ $('body').on('click', '#four', function() {
   runningScore = runningScore + rand4;
   $('#scoreEl').text(runningScore);
   checkWin();
+});
+
+// Write the contents of JS variables to DOM
+$('#targetEl').text(randomTargetNum);
+$('#winsEl').text(wins);
+$('#lossesEl').text(losses);
+$('#scoreEl').text(runningScore);
+
 });
